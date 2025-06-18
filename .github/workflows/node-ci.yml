@@ -25,3 +25,7 @@ jobs:
 
       - name: Ejecutar pruebas con npx
         run: npx jest --runInBand
+
+      - name: Ver entorno
+        run: |
+                echo "Entorno actual: ${{ secrets.NODE_ENV }}"
